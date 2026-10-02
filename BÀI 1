@@ -1,1 +1,22 @@
 
+Câu 1: 
+
+Value Types (Kiểu giá trị):
+
+  Lưu trữ trực tiếp giá trị của biến trên vùng nhớ Stack.
+
+  Tốc độ cấp phát và truy xuất cực nhanh. Bộ nhớ tự động được giải phóng ngay khi biến ra khỏi phạm vi (scope) thực thi.
+
+  Khi gán biến này cho biến khác, toàn bộ dữ liệu sẽ được copy ra một bản mới độc lập.
+
+  Ví dụ: int, float, bool, enum, struct.
+
+Reference Types (Kiểu tham chiếu):
+
+  Dữ liệu thực sự (object data) được lưu trên vùng nhớ Heap, trong khi vùng nhớ Stack chỉ lưu trữ địa chỉ (reference/pointer) trỏ đến vùng nhớ Heap đó.
+
+  Quản lý bộ nhớ phức tạp hơn, dữ liệu trên Heap được dọn dẹp bởi Garbage Collector (GC) khi không còn biến nào trỏ tới.
+
+  Khi gán biến này cho biến khác, chúng chỉ copy địa chỉ tham chiếu, nghĩa là cả hai biến cùng trỏ vào một vùng nhớ.
+
+  Ví dụ: class, interface, string, array, delegate.
